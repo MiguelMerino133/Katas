@@ -5,9 +5,10 @@ describe('FizzBuzz Game', () => {
     const result = game(1);
     expect(result).toEqual(1);
   });
+  
   test('should works 2', () => {
     const result = game(2);
-    expect(result).toEqual(2);
+    expect(result).toEqual("Whizz");
   });
 
   test('should return Fizz when divisible by 3', () => {
@@ -24,6 +25,14 @@ describe('FizzBuzz Game', () => {
     expect(game(15)).toEqual("FizzBuzz");
     expect(game(30)).toEqual("FizzBuzz");
     expect(game(75)).toEqual("FizzBuzz");
+  });
+
+  
+  describe('Bonus: Whizz for prime numbers', () => {
+    test('should return Whizz when the number is prime', () => {
+    expect(game(7)).toEqual("Whizz");
+    expect(game(11)).toEqual("Whizz");
+    });
   });
 
 });
