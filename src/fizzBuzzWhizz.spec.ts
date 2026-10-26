@@ -33,6 +33,17 @@ describe('FizzBuzz Game', () => {
     expect(game(7)).toEqual("Whizz");
     expect(game(11)).toEqual("Whizz");
     });
+      test('should return FizzWhizz for 3', () => {
+    expect(game(3)).toEqual("FizzWhizz");
+  });
+
+  test('should return BuzzWhizz for 5', () => {
+    expect(game(5)).toEqual("BuzzWhizz");
+  });
+
+  test('should not treat 1 as prime', () => {
+    expect(game(1)).toEqual(1);
+  });
   });
 
 });
