@@ -20,4 +20,10 @@ describe('FizzBuzz Game', () => {
     expect(game(20)).toEqual("Buzz");
   });
 
+    test('should return FizzBuzz when divisible by 3 and 5', () => {
+    expect(game(15)).toEqual("FizzBuzz");
+    expect(game(30)).toEqual("FizzBuzz");
+    expect(game(75)).toEqual("FizzBuzz");
+  });
+
 });
