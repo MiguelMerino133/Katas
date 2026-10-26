@@ -9,4 +9,10 @@ describe('FizzBuzz Game', () => {
     const result = game(2);
     expect(result).toEqual(2);
   });
+  
+  test('should return Fizz when divisible by 3', () => {
+    expect(game(6)).toEqual("Fizz");
+    expect(game(9)).toEqual("Fizz");
+  });
+
 });
