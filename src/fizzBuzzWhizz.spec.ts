@@ -38,4 +38,9 @@ describe('Bonus: Whizz for prime numbers', () => {
   test('should not treat 1 as prime', () => {
     expect(game(1)).toEqual(1);
   });
+    test('should handle edge cases up to 100', () => {
+    expect(game(89)).toEqual("Whizz");
+    expect(game(96)).toEqual("Fizz");
+    expect(game(95)).toEqual("Buzz");
+  });
 });
